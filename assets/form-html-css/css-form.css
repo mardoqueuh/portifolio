@@ -1,0 +1,106 @@
+html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    
+}
+#container {
+    color:black;
+    background-color: rgb(82, 223, 101);
+}
+
+#container span {
+    margin-left: 3px;
+}
+.main{
+    width: 50%;
+    border: 4px solid black;
+    margin: 0 25% 0%;
+    background-color:rgb(184, 169, 169);
+    border-radius:8px;
+    padding-top: 8%;
+}
+.main form label{
+    text-indent: none;
+}
+#titulo {
+    /*size: 330px 37px;*/
+    text-align: center;
+    border: solid rgb(82, 223, 101) 5px;
+}
+#subtitulo {
+    text-align: center;
+    padding-top: 25px;
+}
+.main div input{
+    margin: 3px;
+    height: 25px;
+    border:none;
+}
+.grupo {
+    padding:0;
+    border: none;
+}
+.grupo2{
+    border: none;
+    padding: 1px 0;
+}
+/*.campo {
+    width: auto; 
+}*/
+#telefone {}
+.senioridade{
+    padding: 20px 0;
+}
+.checkbox input{
+    text-indent: 25px;
+    float: left;
+}
+#experiencia {
+    max-width:95%;
+    background-color:white;
+}
+.botao{
+    border-color: blue;
+    margin-left: 10%;
+
+}
+
+.botao:hover {
+    color:rgba(47, 47, 209, 0.267);
+    background-color:black;
+}
+
+ @media only screen and (max-width:760px){
+    .main{
+       width: 90%;
+       margin-left: 17px;
+    }
+    #titulo{
+        height: 116px;
+        max-width: 660px;
+        font: size 5px;
+        text-align: center;
+        
+    }
+    #nome {
+        max-width: 59%;
+        display: flow-root;
+    }
+    #email{
+        max-width: 85%;
+        display: flow-root;
+    }
+    #sobrenome {
+        max-width: 59%;
+        display: flow-root;
+    }
+    #telefone{
+        max-width: 85%;
+        display: flow-root;
+    }
+ }
+ 

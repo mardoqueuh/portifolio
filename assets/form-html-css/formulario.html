@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="css-form.css">
+    <title>Cadastro Devs</title>
+    
+</head>
+<body>
+    <div id="container">
+        <div class="conteudo">
+            <div class="main">
+                <h1 id="titulo">Cadastro de Desenvolvedores Web</h1>
+                <p id="subtitulo">Complete suas informações abaixo:</p>
+                <br>
+                
+                <form>
+                    <!--- <fieldset class="grupo"> --->
+                        <div class="campo">
+                            <span class="icnome"><i class="fas fa-address-card"></i></span>
+                            <label for="nome"><strong>Nome</strong></label>
+                            <input type="text" nome="nome" id="nome" required style="width: 250px;">
+                        </div>
+                        <div class="campo">
+                            <span class="icnome"><i class="fas fa-address-card"></i></span>
+                            <label for="sobrenome"><strong>Sobrenome</strong></label>
+                            <input type="text" nome="sobrenome" id="sobrenome" required style="width: 208px;">
+                        </div>
+                    
+                    <!---</fieldset> ----->
+                    <div class="campo">
+                        <span class="icemail"><i class="fas fa-at"></i></span>
+                        <label for="email"><strong>Email</strong></label>
+                        <input type="email" nome="email" id="email" required style="width: 250px;">
+                    </div>
+                    <div class="campo">
+                        <span class="ictel"><i class="fas fa-mobile"></i></span>
+                        <label for="telefone"><strong>Telefone</strong></label>
+                        <input type="text" nome="telefone" id="telefone" required>
+                    </div>
+                    <div class="campo2">
+                        <label><strong>De qual lado da aplicação voçê desenvolve?</strong> </label>
+                        <label>
+                            <input type="radio" nome="devweb" value="Frontend" style="height: 13px;">Front-end
+                        </label>
+                        <label>
+                            <input type="radio" nome="devweb" value="Backend" checked style="height: 13px;">Back-end
+                        </label>
+                        <label>
+                            <input type="radio" nome="devweb" value="Fullstack" style="height: 13px;">Fullstack
+                        </label>    
+                    </div>
+                    <div class="senioridade">
+                        <label for="senioridade"><strong>Senioridade</strong></label>
+                        <select id="senioridade">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Junior</option>
+                            <option>Pleno</option>
+                            <option>Senior</option>               
+                        </select>
+                    </div>
+                    <fieldset class="grupo2">
+                        <div class="ckeckbox">
+                            <label>Selecione as tecnologias que tem conhecimento:</label><br>
+                        
+                            <input type="checkbox" id="tecnologia1" nome="tecnologia1" value="HTML" style="height: 15px;">
+                            <label for="tecnologia1">HTML</label><br>
+
+                            <input type="checkbox" id="tecnologia2" nome="tecnologia2" value="CSS" style="height: 15px;">
+                            <label for="tecnologia2">CSS</label><br>
+
+                            <input type="checkbox" id="tecnologia3" nome="tecnologia3" value="JAVASCRIPT" style="height: 15px;">
+                            <label for="tecnologia3">JAVASCRIPT</label><br>
+
+                            <input type="checkbox" id="tecnologia4" nome="tecnologia4" value="PHP" style="height: 15px;">
+                            <label for="tecnologia4">PHP</label><br>
+
+                            <input type="checkbox" id="tecnologia5" nome="tecnologia5" value="C" style="height: 15px;">
+                            <label for="tecnologia5">C#</label><br>
+
+                            <input type="checkbox" id="tecnologia6" nome="tecnologia6" value="HTML" style="height: 15px;">
+                            <label for="tecnologia6">Python</label><br>
+
+                            <input type="checkbox" id="tecnologia7" nome="tecnologia7" value="Java" style="height: 15px;">
+                            <label for="tecnologia7">Java</label><br>
+                            
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <label><Strong>Conte um pouco sobre sua experiencia profissional</Strong></label><br><br>
+                        <textarea row="6" style="width: 26em" id="experiencia" nome="experiencia"></textarea>
+                    </div>
+                    <button class="botao" type="submit">Concluido</button>
+                </form>
+                </div>
+            </div>    
+        </div>    
+    </div>    
+</body>
+</html>
